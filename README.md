@@ -14,3 +14,4 @@ http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/UserInterface/08_Fil
 https://github.com/gnustep/apps-gorm/tree/master <br/>
 http://www.vaxination.ca/motif/TOC.html <br/>
 https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>
+https://help.perforce.com/visualization/views/6.3/views.html#page/UserManuals/appendixC_xwindow.19.15.html <br/>
