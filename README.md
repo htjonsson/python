@@ -12,3 +12,4 @@ https://incrtcl.sourceforge.net/iwidgets/iwidgets/promptdialog.html <br/>
 http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/UserInterface/08_File/File.htmld/index.html <br/>
 https://github.com/gnustep/apps-gorm/tree/master <br/>
 http://www.vaxination.ca/motif/TOC.html <br/>
+https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>
