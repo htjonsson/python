@@ -13,6 +13,10 @@ https://pythonassets.com/posts/treeview-in-tk-tkinter/ <br/>
 https://codereview.stackexchange.com/questions/251180/animal-storage-treeview-tkinter <br/>
 https://tkdocs.com/tutorial/grid.html <br/>
 https://pynative.com/python-serialize-datetime-into-json/ <br/>
+https://www.w3schools.com/python/python_regex.asp <br/>
+https://www.tutorialspoint.com/python_pillow/python_pillow_environment_setup.htm <br/>
+https://stackoverflow.com/questions/12014210/tkinter-app-adding-a-right-click-context-menu <br/>
+https://python-course.eu/tkinter/text-widget-in-tkinter.php <br/>
 
 #
 
