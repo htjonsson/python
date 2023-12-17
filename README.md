@@ -26,3 +26,4 @@ https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch21.html <br/>
 https://users.cs.cf.ac.uk/dave/X_lecture/ <br/>
 https://blog.pizzabox.computer/posts/booting-the-indy/ <br/>
 https://docs.oracle.com/cd/E19205-01/819-3700/index.html <br/>
+http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/DevTools/15_SimpleApp/SimpleApp.htmld/index.html <br/>
