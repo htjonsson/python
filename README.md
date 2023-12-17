@@ -7,6 +7,10 @@ https://tkdocs.com/tutorial/styles.html <br/>
 https://www.pythontutorial.net/tkinter/tkinter-frame/ <br/>
 https://incrtcl.sourceforge.net/iwidgets/iwidgets/promptdialog.html <br/>
 https://runestone.academy/ns/books/published/thinkcspy/GUIandEventDrivenProgramming/toctree.html <br/>
+https://www.pythontutorial.net/tkinter/tkinter-listbox/ <br/>
+https://pythonguides.com/python-tkinter-grid/ <br/>
+https://pythonassets.com/posts/treeview-in-tk-tkinter/ <br/>
+https://codereview.stackexchange.com/questions/251180/animal-storage-treeview-tkinter <br/>
 
 #
 
