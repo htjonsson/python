@@ -1,0 +1,3047 @@
+
+Name	Class	Type	Default	Access
+{
+	"urls" : [
+		"https://users.cs.cf.ac.uk/dave/X_lecture/",
+		"http://www.vaxination.ca/motif/TOC.html",
+		"https://www.oreilly.com/openbook/motif/vol6a/Vol6a_html/ch11.html"
+	],
+	"widgets" : [
+		{
+			"name" : "Object",
+			"synopsis" : "<Xm/Xm.h>",
+			"class" : "objectClass",
+			"url" : "http://www.vaxination.ca/motif/Object_3X.html",
+			"description": "",
+			"resources" : [
+				{
+					"name": "XmNdestroyCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "RectObj",
+			"synopsis" : "<Xm/Xm.h>",
+			"class" : "rectObjClass",
+			"inherit" : "objectClass",
+			"url" : "http://www.vaxination.ca/motif/RectObj_3X.html",
+			"description": "",
+			"resources" : [
+				{
+					"name": "XmNancestorSensitive",
+					"class": "XmCSensitive",
+					"type": "Boolean",
+					"default": "dynamic",
+					"access": "G",
+					"description": ""
+				},
+				{
+					"name": "XmNborderWidth",
+					"class": "XmCBorderWidth",
+					"type": "Dimension",
+					"default": "1",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNheight",
+					"class": "XmCHeight",
+					"type": "Dimension",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNsensitive",
+					"class": "XmCSensitive",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNwidth",
+					"class": "XmCWidth",
+					"type": "Dimension",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNx",
+					"class": "XmCPosition",
+					"type": "Position",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNy",
+					"class": "XmCPosition",
+					"type": "Position",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				}		
+			]
+		},
+		{
+			"name" : "Core",
+			"synopsis" : "<Xm/Xm.h>",
+			"class" : "widgetClass",
+			"inherit" : "rectObjClass",
+			"url" : "http://www.vaxination.ca/motif/Core_3X.html",
+			"description": "",
+			"resources" : [
+				{
+					"name": "XmNaccelerators",
+					"class": "XmCAccelerators",
+					"type": "XtAccelerators",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNbackground",
+					"class": "XmCBackground",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNbackgroundPixmap",
+					"class": "XmCPixmap",
+					"type": "Pixmap",
+					"default": "XmUNSPECIFIED_PIXMAP",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNborderColor",
+					"class": "XmCBorderColor",
+					"type": "Pixel",
+					"default": "XtDefaultForeground",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNborderPixmap",
+					"class": "XmCPixmap",
+					"type": "Pixmap",
+					"default": "XmUNSPECIFIED_PIXMAP",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNcolormap",
+					"class": "XmCColormap",
+					"type": "Colormap",
+					"default": "dynamic",
+					"access": "CG",
+					"description": ""
+				},
+				{
+					"name": "XmNdepth",
+					"class": "XmCDepth",
+					"type": "int",
+					"default": "dynamic",
+					"access": "CG",
+					"description": ""
+				},
+				{
+					"name": "XmNdestroyCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				
+				{
+					"name": "XmNinitialResourcesPersistent",
+					"class": "XmCInitialResourcesPersistent",
+					"type": "Boolean",
+					"default": "True",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNmappedWhenManaged",
+					"class": "XmCMappedWhenManaged",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNscreen",
+					"class": "XmCScreen",
+					"type": "Screen *",
+					"default": "dynamic",
+					"access": "CG",
+					"description": ""
+				},			
+				{
+					"name": "XmNtranslations",
+					"class": "XmCTranslations",
+					"type": "XtTranslations",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "Composite",
+			"synopsis" : "<Xm/Xm.h>",
+			"class" : "compositeWidgetClass",
+			"inherit" : "coreClass",
+			"url" : "http://www.vaxination.ca/motif/Composite_3X.html",
+			"description": "",
+			"resources" : [				
+				{
+					"name": "XmNchildren",
+					"class": "XmCReadOnly",
+					"type": "WidgetList",
+					"default": "NULL",
+					"access": "G",
+					"description": ""
+				},
+				{
+					"name": "XmNinsertPosition",
+					"class": "XmCInsertPosition",
+					"type": "XtOrderProc",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNnumChildren",
+					"class": "XmCReadOnly",
+					"type": "Cardinal",
+					"default": "0",
+					"access": "G",
+					"description": ""
+				}		
+			]
+		},
+		{
+			"name" : "Constraint",
+			"synopsis" : "<Xm/Xm.h>",
+			"class" : "constraintWidgetClass",
+			"inherit" : "compositeWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/Constraint_3X.html",
+			"description": "",
+			"resources" : []
+		},
+		{
+			"name" : "XmManager",
+			"synopsis" : "<Xm/Xm.h>",
+			"class" : "xmManagerWidgetClass",
+			"inherit" : "constraintWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmManager_3X.html",
+			"description": "",
+			"resources" : [				
+				{
+					"name": "XmNbottomShadowColor",
+					"class": "XmCBottomShadowColor",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNbottomShadowPixmap",
+					"class": "XmCBottomShadowPixmap",
+					"type": "Pixmap",
+					"default": "XmUNSPECIFIED_PIXMAP",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNforeground",
+					"class": "XmCForeground",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNhelpCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNhighlightColor",
+					"class": "XmCHighlightColor",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},			
+				{
+					"name": "XmNhighlightPixmap",
+					"class": "XmCHighlightPixmap",
+					"type": "Pixmap",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNinitialFocus",
+					"class": "XmCInitialFocus",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNnavigationType",
+					"class": "XmCNavigationType",
+					"type": "XmNavigationType",
+					"default": "XmNONE",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNshadowThickness",
+					"class": "XmCShadowThickness",
+					"type": "Dimension",
+					"default": "2",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNstringDirection",
+					"class": "XmCStringDirection",
+					"type": "XmStringDirection",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtopShadowColor",
+					"class": "XmCTopShadowColor",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNtopShadowPixmap",
+					"class": "XmCTopShadowPixmap",
+					"type": "Pixmap",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNtraversalOn",
+					"class": "XmCTraversalOn",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNunitType",
+					"class": "XmCUnitType",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNuserData",
+					"class": "XmCUserData",
+					"type": "XtPointer",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				}	
+			]
+		},
+		{
+			"name" : "XmBulletinBoard",
+			"synopsis" : "<Xm/BulletinB.h>",
+			"class" : "xmBulletinBoardWidgetClass",
+			"inherit" : "xmManagerWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmBulletinB_3X.html",
+			"description": "",
+			"resources" : [				
+				{
+					"name": "XmNallowOverlap",
+					"class": "XmCAllowOverlap",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNautoUnmanage",
+					"class": "XmCAutoUnmanage",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CG",
+					"description": ""
+				},
+				{
+					"name": "XmNbuttonFontList",
+					"class": "XmCButtonFontList",
+					"type": "XmFontList",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNcancelButton",
+					"class": "XmCWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "SG",
+					"description": ""
+				},
+				{
+					"name": "XmNdefaultButton",
+					"class": "XmCWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "SG",
+					"description": ""
+				},
+				{
+					"name": "XmNdefaultPosition",
+					"class": "XmCDefaultPosition",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNdialogStyle",
+					"class": "XmCDialogStyle",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNdialogTitle",
+					"class": "XmCDialogTitle",
+					"type": "XmString",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNfocusCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNlabelFontList",
+					"class": "XmCLabelFontList",
+					"type": "XmFontList",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmapCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginHeight",
+					"class": "XmCMarginHeight",
+					"type": "Dimension",
+					"default": "10",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginWidth",
+					"class": "XmCMarginWidth",
+					"type": "Dimension",
+					"default": "10",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNnoResize",
+					"class": "XmCNoResize",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNresizePolicy",
+					"class": "XmCResizePolicy",
+					"type": "unsigned char",
+					"default": "XmRESIZE_ANY",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNshadowType",
+					"class": "XmCShadowType",
+					"type": "unsigned char",
+					"default": "XmSHADOW_OUT",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtextFontList",
+					"class": "XmCTextFontList",
+					"type": "XmFontList",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtextTranslations",
+					"class": "XmCTranslations",
+					"type": "XtTranslations",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNunmapCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				}					
+			]
+		},
+		{
+			"name" : "XmForm",
+			"synopsis" : "<Xm/Form.h>",
+			"class" : "xmFormWidgetClass",
+			"inherit" : "xmBulletinBoardWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmForm_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNfractionBase",
+					"class": "XmCMaxValue",
+					"type": "int",
+					"default": "100",
+					"access": "CSG",
+					"description": ""
+				},				
+				{
+					"name": "XmNhorizontalSpacing",
+					"class": "XmCSpacing",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNrubberPositioning",
+					"class": "XmCRubberPositioning",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNverticalSpacing",
+					"class": "XmCSpacing",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				}
+			],
+			"constraints" : [
+				{
+					"name": "XmNbottomAttachment",
+					"class": "XmCAttachment",
+					"type": "unsigned char",
+					"default": "XmATTACH_NONE",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNbottomOffset",
+					"class": "XmCOffset",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNbottomPosition",
+					"class": "XmCAttachment",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNbottomWidget",
+					"class": "XmCWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNleftAttachment",
+					"class": "XmCAttachment",
+					"type": "unsigned char",
+					"default": "XmATTACH_NONE",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNleftOffset",
+					"class": "XmCOffset",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNleftPosition",
+					"class": "XmCAttachment",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNleftWidget",
+					"class": "XmCWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNresizable",
+					"class": "XmCBoolean",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNrightAttachment",
+					"class": "XmCAttachment",
+					"type": "unsigned char",
+					"default": "XmATTACH_NONE",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNrightOffset",
+					"class": "XmCOffset",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNrightPosition",
+					"class": "XmCAttachment",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNrightWidget",
+					"class": "XmCWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtopAttachment",
+					"class": "XmCAttachment",
+					"type": "unsigned char",
+					"default": "XmATTACH_NONE",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtopOffset",
+					"class": "XmCOffset",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtopPosition",
+					"class": "XmCAttachment",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtopWidget",
+					"class": "XmCWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+			]	
+		},
+		{
+			"name" : "XmFrame",
+			"synopsis" : "<Xm/Frame.h>",
+			"class" : "xmFrameWidgetClass",
+			"inherit" : "xmManagerWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmFrame_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNmarginWidth",
+					"class": "XmCMarginWidth",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},				
+				{
+					"name": "XmNmarginHeight",
+					"class": "XmCMarginHeight",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNshadowType",
+					"class": "XmCShadowType",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNchildType",
+					"class": "XmCChildType",
+					"type": "unsigned char",
+					"default": "XmFRAME_WORKAREA_CHILD",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNchildHorizontalAlignment",
+					"class": "XmCChildHorizontalAlignment",
+					"type": "unsigned char",
+					"default": "XmALIGNMENT_BEGINNING",
+					"access": "CSG",
+					"description": ""
+				},				
+				{
+					"name": "XmNchildHorizontalSpacing",
+					"class": "XmCChildHorizontalSpacing",
+					"type": "Dimension",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNchildVerticalAlignment",
+					"class": "XmCChildVerticalAlignment",
+					"type": "unsigned char",
+					"default": "XmALIGNMENT_CENTER",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},				
+		{
+			"name" : "xmPrimitive",
+			"synopsis" : "<Xm/Xm.h>",
+			"class" : "xmPrimitiveWidgetClass",
+			"inherit" : "widgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmPrimitive_3X.html",
+			"description": "",
+			"resources" : [				
+				{
+					"name": "XmNbottomShadowColor",
+					"class": "XmCBottomShadowColor",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNbottomShadowPixmap",
+					"class": "XmCBottomShadowPixmap",
+					"type": "Pixmap",
+					"default": "XmUNSPECIFIED_PIXMAP",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNforeground",
+					"class": "XmCForeground",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNhelpCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNhighlightColor",
+					"class": "XmCHighlightColor",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNhighlightOnEnter",
+					"class": "XmCHighlightOnEnter",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNhighlightPixmap",
+					"class": "XmCHighlightPixmap",
+					"type": "Pixmap",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNhighlightThickness",
+					"class": "XmCHighlightThickness",
+					"type": "Dimension",
+					"default": "2",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNnavigationType",
+					"class": "XmCNavigationType",
+					"type": "XmNavigationType",
+					"default": "XmNONE",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNshadowThickness",
+					"class": "XmCShadowThickness",
+					"type": "Dimension",
+					"default": "2",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNtopShadowColor",
+					"class": "XmCTopShadowColor",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},		
+				{
+					"name": "XmNtopShadowPixmap",
+					"class": "XmCTopShadowPixmap",
+					"type": "Pixmap",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNtraversalOn",
+					"class": "XmCTraversalOn",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNunitType",
+					"class": "XmCUnitType",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNuserData",
+					"class": "XmCUserData",
+					"type": "XtPointer",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				}							
+			]	
+		},
+		{
+			"name" : "XmArrowButton",
+			"synopsis" : "<Xm/ArrowB.h>",
+			"class" : "xmArrowButtonWidgetClass",
+			"inherit" : "xmPrimitiveWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmArrowButA_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNactivateCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNarmCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNarrowDirection",
+					"class": "XmCArrowDirection",
+					"type": "unsigned char",
+					"default": "XmARROW_UP",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNdisarmCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNmultiClick",
+					"class": "XmCMultiClick",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmCascadeButton",
+			"synopsis" : "<Xm/CascadeB.h>",
+			"class" : "xmCascadeButtonWidgetClass",
+			"inherit" : "xmlabelWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmCascadeBA_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNactivateCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNcascadePixmap",
+					"class": "XmCPixmap",
+					"type": "Pixmap",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNcascadingCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNmappingDelay",
+					"class": "XmCMappingDelay",
+					"type": "int",
+					"default": "180 ms",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNsubMenuId",
+					"class": "XmCMenuWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},	
+		{
+			"name" : "XmPushButton",
+			"synopsis" : "<Xm/PushB.h>",
+			"class" : "xmPushButtonWidgetClass",
+			"inherit" : "xmLabelWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmPushButtA_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNactivateCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNarmCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNarmColor",
+					"class": "XmCArmColor",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNarmPixmap",
+					"class": "XmCArmPixmap",
+					"type": "Pixmap",
+					"default": "XmUNSPECIFIED_PIXMAP",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNdefaultButtonShadowThickness",
+					"class": "XmCDefaultButtonShadowThickness",
+					"type": "Dimension",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNdisarmCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNfillOnArm",
+					"class": "XmCFillOnArm",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmultiClick",
+					"class": "XmCMultiClick",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNshowAsDefault",
+					"class": "XmCShowAsDefault",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmDrawingArea",
+			"synopsis" : "<Xm/DrawingA.h>",
+			"class" : "xmDrawingAreaWidgetClass",
+			"inherit" : "xmManagerWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmDrawingAr_3X.html",
+			"description": "",
+			"resources" : [	
+				{
+					"name": "XmNexposeCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNinputCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginHeight",
+					"class": "XmCMarginHeight",
+					"type": "Dimension",
+					"default": "10",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginWidth",
+					"class": "XmCMarginWidth",
+					"type": "Dimension",
+					"default": "10",
+					"access": "CSG",
+					"description": ""
+				},				
+				{
+					"name": "XmNresizeCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+								{
+					"name": "XmNresizePolicy",
+					"class": "XmCResizePolicy",
+					"type": "unsigned char",
+					"default": "XmRESIZE_ANY",
+					"access": "CSG",
+					"description": ""
+				},	
+			]
+		},
+		{
+			"name" : "XmDrawnButton",
+			"synopsis" : "<Xm/DrawnB.h>",
+			"class" : "xmDrawnButtonWidgetClass",
+			"inherit" : "xmLabelWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmDrawnButt_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNactivateCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNarmCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNdisarmCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNexposeCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNmultiClick",
+					"class": "XmCMultiClick",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNpushButtonEnabled",
+					"class": "XmCPushButtonEnabled",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNresizeCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNshadowType",
+					"class": "XmCShadowType",
+					"type": "unsigned char",
+					"default": "XmSHADOW_ETCHED_IN",
+					"access": "C",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmToggleButton",
+			"synopsis" : "<Xm/ToggleB.h>",
+			"class" : "xmToggleButtonWidgetClass",
+			"inherit" : "xmLabelWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmToggleBuA_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNarmCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNdisarmCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNfillOnSelect",
+					"class": "XmCFillOnSelect",
+					"type": "Boolean",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNindicatorOn",
+					"class": "XmCIndicatorOn",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNindicatorSize",
+					"class": "XmCIndicatorSize",
+					"type": "Dimension",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNindicatorType",
+					"class": "XmCIndicatorType",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},				
+				{
+					"name": "XmNselectColor",
+					"class": "XmCSelectColor",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNselectInsensitivePixmap",
+					"class": "XmCSelectInsensitivePixmap",
+					"type": "Pixmap",
+					"default": "XmUNSPECIFIED_PIXMAP",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNselectPixmap",
+					"class": "XmCSelectPixmap",
+					"type": "Pixmap",
+					"default": "XmUNSPECIFIED_PIXMAP",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNset",
+					"class": "XmCSet",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNspacing",
+					"class": "XmCSpacing",
+					"type": "Dimension",
+					"default": "4",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNvalueChangedCallback",
+					"class": "XmCValueChangedCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},				
+				{
+					"name": "XmNvisibleWhenOff",
+					"class": "XmCVisibleWhenOff",
+					"type": "Boolean",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+			]
+		},
+		{
+			"name" : "XmSeparator",
+			"synopsis" : "<Xm/Separator.h>",
+			"class" : "xmSeparatorWidgetClass",
+			"inherit" : "xmPrimitiveWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmSeparatoA_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNmargin",
+					"class": "XmCMargin",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNorientation",
+					"class": "XmCOrientation",
+					"type": "unsigned char",
+					"default": "XmHORIZONTAL",
+					"access": "CSG",
+					"description": ""
+				},
+								{
+					"name": "XmNseparatorType",
+					"class": "XmCSeparatorType",
+					"type": "unsigned char",
+					"default": "XmSHADOW_ETCHED_IN",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmLabel",
+			"synopsis" : "<Xm/Label.h>",
+			"class" : "xmLabelWidgetClass",
+			"inherit" : "xmPrimitiveWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmLabel_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNaccelerator",
+					"class": "XmCAccelerator",
+					"type": "String",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNacceleratorText",
+					"class": "XmCAcceleratorText",
+					"type": "XmString",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNalignment",
+					"class": "XmCAlignment",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNfontList",
+					"class": "XmCFontList",
+					"type": "XmFontList",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNlabelInsensitivePixmap",
+					"class": "XmCLabelInsensitivePixmap",
+					"type": "Pixmap",
+					"default": "XmUNSPECIFIED_PIXMAP",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNlabelPixmap",
+					"class": "XmCLabelPixmap",
+					"type": "Pixmap",
+					"default": "XmUNSPECIFIED_PIXMAP",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNlabelString",
+					"class": "XmCXmString",
+					"type": "XmString",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNlabelType",
+					"class": "XmCLabelType",
+					"type": "unsigned char",
+					"default": "XmSTRING",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginBottom",
+					"class": "XmCMarginBottom",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginHeight",
+					"class": "XmCMarginHeight",
+					"type": "Dimension",
+					"default": "2",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginLeft",
+					"class": "XmCMarginLeft",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginRight",
+					"class": "XmCMarginRight",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginTop",
+					"class": "XmCMarginTop",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginWidth",
+					"class": "XmCMarginWidth",
+					"type": "Dimension",
+					"default": "2",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmnemonic",
+					"class": "XmCMnemonic",
+					"type": "KeySym",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},				
+				{
+					"name": "XmNmnemonicCharSet",
+					"class": "XmCMnemonicCharSet",
+					"type": "String",
+					"default": "XmFONTLIST_DEFAULT_TAG",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNrecomputeSize",
+					"class": "XmCRecomputeSize",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNstringDirection",
+					"class": "XmCStringDirection",
+					"type": "XmStringDirection",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				}			
+			]
+		},	
+		{
+			"name" : "XmPanedWindow",
+			"synopsis" : "<Xm/PanedW.h>",
+			"class" : "xmPanedWindowWidgetClass",
+			"inherit" : "xmManagerWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmPanedWind_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNmarginHeight",
+					"class": "XmCMarginHeight",
+					"type": "Dimension",
+					"default": "3",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginWidth",
+					"class": "XmCMarginWidth",
+					"type": "Dimension",
+					"default": "3",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNrefigureMode",
+					"class": "XmCBoolean",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNsashHeight",
+					"class": "XmCSashHeight",
+					"type": "Dimension",
+					"default": "10",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNsashIndent",
+					"class": "XmCSashIndent",
+					"type": "Position",
+					"default": "-10",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNsashShadowThickness",
+					"class": "XmCShadowThickness",
+					"type": "Dimension",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNsashWidth",
+					"class": "XmCSashWidth",
+					"type": "Dimension",
+					"default": "10",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNseparatorOn",
+					"class": "XmCSeparatorOn",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNspacing",
+					"class": "XmCSpacing",
+					"type": "Dimension",
+					"default": "8",
+					"access": "CSG",
+					"description": ""
+				}
+			],
+			"contraints" : [
+				{
+					"name": "XmNallowResize",
+					"class": "XmCBoolean",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNpaneMaximum",
+					"class": "XmCPaneMaximum",
+					"type": "Dimension",
+					"default": "1000",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNpaneMinimum",
+					"class": "XmCPaneMinimum",
+					"type": "Dimension",
+					"default": "1",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNpositionIndex",
+					"class": "XmCPositionIndex",
+					"type": "short",
+					"default": "XmLAST_POSITION",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNskipAdjust",
+					"class": "XmCBoolean",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmDrawingArea",
+			"synopsis" : "<Xm/DrawingA.h>",
+			"class" : "xmDrawingAreaWidgetClass",
+			"inherit" : "xmManagerWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmDrawingAr_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNexposeCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNinputCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},				
+				{
+					"name": "XmNmarginHeight",
+					"class": "XmCMarginHeight",
+					"type": "Dimension",
+					"default": "10",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmarginWidth",
+					"class": "XmCMarginWidth",
+					"type": "Dimension",
+					"default": "10",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNresizeCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+								{
+					"name": "XmNresizePolicy",
+					"class": "XmCResizePolicy",
+					"type": "unsigned char",
+					"default": "XmRESIZE_ANY",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmScrollBar",
+			"synopsis" : "<Xm/Label.h>",
+			"class" : "xmScrollBarWidgetClass",
+			"inherit" : "xmPrimitiveWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmScrollBaA_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNdecrementCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNdragCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNincrement",
+					"class": "XmCIncrement",
+					"type": "int",
+					"default": "1",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNincrementCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNinitialDelay",
+					"class": "XmCInitialDelay",
+					"type": "int",
+					"default": "250 ms",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmaximum",
+					"class": "XmCMaximum",
+					"type": "int",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNminimum",
+					"class": "XmCMinimum",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNorientation",
+					"class": "XmCOrientation",
+					"type": "unsigned char",
+					"default": "XmVERTICAL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNpageDecrementCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNpageIncrement",
+					"class": "XmCPageIncrement",
+					"type": "int",
+					"default": "10",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNpageIncrementCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNprocessingDirection",
+					"class": "XmCProcessingDirection",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNrepeatDelay",
+					"class": "XmCRepeatDelay",
+					"type": "int",
+					"default": "50 ms",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNshowArrows",
+					"class": "XmCShowArrows",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNsliderSize",
+					"class": "XmCSliderSize",
+					"type": "int",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtoTopCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},				
+				{
+					"name": "XmNtroughColor",
+					"class": "XmCTroughColor",
+					"type": "Pixel",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNvalue",
+					"class": "XmCValue",
+					"type": "int",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNvalueChangedCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmTextField",
+			"synopsis" : "<Xm/TextF.h>",
+			"class" : "xmTextFieldWidgetClass",
+			"inherit" : "xmPrimitiveWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmTextFieAA_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNactivateCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNaccelerator",
+					"class": "XmCAccelerator",
+					"type": "String",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNblinkRate",
+					"class": "XmCBlinkRate",
+					"type": "int",
+					"default": "500",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNcolumns",
+					"class": "XmCColumns",
+					"type": "short",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNcursorPosition",
+					"class": "XmCCursorPosition",
+					"type": "XmTextPosition",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNcursorPositionVisible",
+					"class": "XmCCursorPositionVisible",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNeditable",
+					"class": "XmCEditable",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNfocusCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNfontList",
+					"class": "XmCFontList",
+					"type": "XmFontList",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNgainPrimaryCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNlosePrimaryCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNlosingFocusCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNmarginHeight",
+					"class": "XmCMarginHeight",
+					"type": "Dimension",
+					"default": "5",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmarginWidth",
+					"class": "XmCMarginWidth",
+					"type": "Dimension",
+					"default": "5",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmaxLength",
+					"class": "XmCMaxLength",
+					"type": "int",
+					"default": "largest integer",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmodifyVerifyCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNmodifyVerifyCallbackWcs",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNmotionVerifyCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNpendingDelete",
+					"class": "XmCPendingDelete",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNresizeWidth",
+					"class": "XmCResizeWidth",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNselectionArray",
+					"class": "XmCSelectionArray",
+					"type": "XtPointer",
+					"default": "default array",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNselectionArrayCount",
+					"class": "XmCSelectionArrayCount",
+					"type": "int",
+					"default": "3",
+					"access": "CSG",
+					"description": ""
+				},								
+				{
+					"name": "XmNselectThreshold",
+					"class": "XmCSelectThreshold",
+					"type": "int",
+					"default": "5",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNvalue",
+					"class": "XmCValue",
+					"type": "String",
+					"default": "''",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNvalueChangedCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNverifyBell",
+					"class": "XmCVerifyBell",
+					"type": "Boolean",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmText",
+			"synopsis" : "<Xm/Text.h>",
+			"class" : "xmTextWidgetClass",
+			"inherit" : "xmPrimitiveWidgetClass",
+			"url": "http://www.vaxination.ca/motif/XmText_3X.html",
+			"description": "",
+			"resources" : [
+				{
+					"name": "XmNactivateCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNautoShowCursorPosition",
+					"class": "XmCAutoShowCursorPosition",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNcursorPosition",
+					"class": "XmCCursorPosition",
+					"type": "XmTextPosition",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNeditable",
+					"class": "XmCEditable",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNeditMode",
+					"class": "XmCEditMode",
+					"type": "int",
+					"default": "XmSINGLE_LINE_EDIT",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNfocusCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNgainPrimaryCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNlosePrimaryCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNlosingFocusCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},												
+				{
+					"name": "XmNmarginHeight",
+					"class": "XmCMarginHeight",
+					"type": "Dimension",
+					"default": "5",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmarginWidth",
+					"class": "XmCMarginWidth",
+					"type": "Dimension",
+					"default": "5",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmaxLength",
+					"class": "XmCMaxLength",
+					"type": "int",
+					"default": "largest integer",
+					"access": "CSG",
+					"description": ""
+				},									
+				{
+					"name": "XmNmodifyVerifyCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNmodifyVerifyCallbackWcs",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNmotionVerifyCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNsource",
+					"class": "XmCSource",
+					"type": "XmTextSource",
+					"default": "Default source",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNtopCharacter",
+					"class": "XmCTextPosition",
+					"type": "XmTextPosition",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNvalue",
+					"class": "XmCValue",
+					"type": "String",
+					"default": "''",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNvalueChangedCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNverifyBell",
+					"class": "XmCVerifyBell",
+					"type": "Boolean",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmList",
+			"synopsis" : "<Xm/List.h>",
+			"class" : "xmListWidgetClass",
+			"inherit" : "xmPrimitiveWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmList_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNautomaticSelection",
+					"class": "XmCAutomaticSelection",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNbrowseSelectionCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNdefaultActionCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNdoubleClickInterval",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNextendedSelectionCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNfontList",
+					"class": "XmCFontList",
+					"type": "XmFontList",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNitemCount",
+					"class": "XmCItemCount",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNitems",
+					"class": "XmCItems",
+					"type": "XmStringTable",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},												
+				{
+					"name": "XmNlistMarginHeight",
+					"class": "XmCListMarginHeight",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNlistMarginWidth",
+					"class": "XmCListMarginWidth",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNlistSizePolicy",
+					"class": "XmCListSizePolicy",
+					"type": "unsigned char",
+					"default": "XmVARIABLE",
+					"access": "CG",
+					"description": ""
+				},
+				{
+					"name": "XmNlistSpacing",
+					"class": "XmCListSpacing",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmultipleSelectionCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNscrollBarDisplayPolicy",
+					"class": "XmCScrollBarDisplayPolicy",
+					"type": "unsigned char",
+					"default": "XmAS_NEEDED",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNselectedItemCount",
+					"class": "XmCSelectedItemCount",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNselectedItems",
+					"class": "XmCSelectedItems",
+					"type": "XmStringTable",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNselectionPolicy",
+					"class": "XmCSelectionPolicy",
+					"type": "unsigned char",
+					"default": "XmBROWSE_SELECT",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNsingleSelectionCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNstringDirection",
+					"class": "XmCStringDirection",
+					"type": "XmStringDirection",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtopItemPosition",
+					"class": "XmCTopItemPosition",
+					"type": "int",
+					"default": "1",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNvisibleItemCount",
+					"class": "XmCVisibleItemCount",
+					"type": "int",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmScale",
+			"synopsis" : "<Xm/Scale.h>",
+			"class" : "xmScaleWidgetClass",
+			"inherit" : "xmManagerWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmScale_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNdecimalPoints",
+					"class": "XmCDecimalPoints",
+					"type": "short",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNdragCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNfontList",
+					"class": "XmCFontList",
+					"type": "XmFontList",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNhighlightOnEnter",
+					"class": "XmCHighlightOnEnter",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNhighlightThickness",
+					"class": "XmCHighlightThickness",
+					"type": "Dimension",
+					"default": "2",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmaximum",
+					"class": "XmCMaximum",
+					"type": "int",
+					"default": "100",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNminimum",
+					"class": "XmCMinimum",
+					"type": "int",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNorientation",
+					"class": "XmCOrientation",
+					"type": "unsigned char",
+					"default": "XmVERTICAL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNprocessingDirection",
+					"class": "XmCProcessingDirection",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNscaleHeight",
+					"class": "XmCScaleHeight",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},												
+				{
+					"name": "XmNscaleMultiple",
+					"class": "XmCScaleMultiple",
+					"type": "int",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNscaleWidth",
+					"class": "XmCScaleWidth",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNshowValue",
+					"class": "XmCShowValue",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNtitleString",
+					"class": "XmCTitleString",
+					"type": "XmString",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNvalue",
+					"class": "XmCValue",
+					"type": "int",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNvalueChangedCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmScrolledWindow",
+			"synopsis" : "<Xm/ScrolledW.h>",
+			"class" : "xmScrolledWindowWidgetClass",
+			"inherit" : "xmManagerWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmScrolledA_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNclipWindow",
+					"class": "XmCClipWindow",
+					"type": "Widget",
+					"default": "dynamic",
+					"access": "G",
+					"description": ""
+				},	
+				{
+					"name": "XmNhorizontalScrollBar",
+					"class": "XmCHorizontalScrollBar",
+					"type": "Widget",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNscrollBarDisplayPolicy",
+					"class": "XmCScrollBarDisplayPolicy",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNscrollBarPlacement",
+					"class": "XmCScrollBarPlacement",
+					"type": "unsigned char",
+					"default": "XmBOTTOM_RIGHT",
+					"access": "CSG",
+					"description": ""
+				},	
+
+				{
+					"name": "XmNscrolledWindowMarginHeight",
+					"class": "XmCScrolledWindowMarginHeight",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNscrolledWindowMarginWidth",
+					"class": "XmCScrolledWindowMarginWidth",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},					
+				{
+					"name": "XmNscrollingPolicy",
+					"class": "XmCScrollingPolicy",
+					"type": "unsigned char",
+					"default": "XmAPPLICATION_DEFINED",
+					"access": "CG",
+					"description": ""
+				},	
+				{
+					"name": "XmNspacing",
+					"class": "XmCSpacing",
+					"type": "Dimension",
+					"default": "4",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNtraverseObscuredCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNverticalScrollBar",
+					"class": "XmCVerticalScrollBar",
+					"type": "Widget",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNvisualPolicy",
+					"class": "XmCVisualPolicy",
+					"type": "dynamic",
+					"default": "4",
+					"access": "G",
+					"description": ""
+				},
+				{
+					"name": "XmNworkWindow",
+					"class": "XmCWorkWindow",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmMainWindow",
+			"synopsis" : "<Xm/MainW.h>",
+			"class" : "xmMainWindowWidgetClass",
+			"inherit" : "xmScrolledWindowWidgetClass",
+			"url" : "http://www.vaxination.ca/motif/XmMainWindA_3X.html",
+			"description": "",
+			"resources" : [		
+				{
+					"name": "XmNcommandWindow",
+					"class": "XmCCommandWindow",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNcommandWindowLocation",
+					"class": "XmCCommandWindowLocation",
+					"type": "unsigned char",
+					"default": "XmCOMMAND_BELOW_WORKSPACE",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmainWindowMarginHeight",
+					"class": "XmCMainWindowMarginHeight",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmainWindowMarginWidth",
+					"class": "XmCMainWindowMarginWidth",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmenuBar",
+					"class": "XmCMenuBar",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNmessageWindow",
+					"class": "XmCMessageWindow",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+								{
+					"name": "XmNshowSeparator",
+					"class": "XmCShowSeparator",
+					"type": "Boolean",
+					"default": "NULL",
+					"access": "False",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name" : "XmRowColumn",
+			"synopsis" : "<Xm/RowColumn.h>",
+			"class" : "xmRowColumnWidgetClass",
+			"inherit" : "xmManagerWidgetClass",
+			"description": "",
+			"url": "http://www.vaxination.ca/motif/XmRowColumn_3X.html",
+			"resources" : [		
+				{
+					"name": "XmNadjustLast",
+					"class": "XmCAdjustLast",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNadjustMargin",
+					"class": "XmCAdjustMargin",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNentryAlignment",
+					"class": "XmCAlignment",
+					"type": "unsigned char",
+					"default": "XmALIGNMENT_BEGINNING",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNentryBorder",
+					"class": "XmCEntryBorder",
+					"type": "Dimension",
+					"default": "0",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNentryCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},			
+				{
+					"name": "XmNentryClass",
+					"class": "XmCEntryClass",
+					"type": "WidgetClass",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNentryVerticalAlignment",
+					"class": "XmCVerticalAlignment",
+					"type": "unsigned char",
+					"default": "XmALIGNMENT_CENTER",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNisAligned",
+					"class": "XmCIsAligned",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNisHomogeneous",
+					"class": "XmCIsHomogeneous",
+					"type": "Boolean",
+					"default": "dynamic",
+					"access": "CG",
+					"description": ""
+				},
+				{
+					"name": "XmNlabelString",
+					"class": "XmCXmString",
+					"type": "XmString",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmapCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},	
+				{
+					"name": "XmNmarginHeight",
+					"class": "XmCMarginHeight",
+					"type": "Dimension",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmarginWidth",
+					"class": "XmCMarginWidth",
+					"type": "Dimension",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},					
+				{
+					"name": "XmNmenuAccelerator",
+					"class": "XmCAccelerators",
+					"type": "String",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmenuHelpWidget",
+					"class": "XmCMenuWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},					
+				{
+					"name": "XmNmenuHistory",
+					"class": "XmCMenuWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmenuPost",
+					"class": "XmCMenuPost",
+					"type": "String",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmnemonic",
+					"class": "XmCMnemonic",
+					"type": "KeySym",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNmnemonicCharSet",
+					"class": "XmCMnemonicCharSet",
+					"type": "String",
+					"default": "XmFONTLIST_DEFAULT_TAG",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNnumColumns",
+					"class": "XmCNumColumns",
+					"type": "short",
+					"default": "1",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNorientation",
+					"class": "XmCOrientation",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNpacking",
+					"class": "XmCPacking",
+					"type": "unsigned char",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNpopupEnabled",
+					"class": "XmCPopupEnabled",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNradioAlwaysOne",
+					"class": "XmCRadioAlwaysOne",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNradioBehavior",
+					"class": "XmCRadioBehavior",
+					"type": "Boolean",
+					"default": "False",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNresizeHeight",
+					"class": "XmCResizeHeight",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},
+				{
+					"name": "XmNresizeWidth",
+					"class": "XmCResizeWidth",
+					"type": "Boolean",
+					"default": "True",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNrowColumnType",
+					"class": "XmCRowColumnType",
+					"type": "unsigned char",
+					"default": "XmWORK_AREA",
+					"access": "CG",
+					"description": ""
+				},	
+				{
+					"name": "XmNspacing",
+					"class": "XmCSpacing",
+					"type": "Dimension",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNsubMenuId",
+					"class": "XmCMenuWidget",
+					"type": "Widget",
+					"default": "NULL",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNtearOffMenuActivateCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNtearOffMenuDeactivateCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNtearOffModel",
+					"class": "XmCTearOffModel",
+					"type": "unsigned char",
+					"default": "XmTEAR_OFF_DISABLED",
+					"access": "CSG",
+					"description": ""
+				},	
+				{
+					"name": "XmNunmapCallback",
+					"class": "XmCCallback",
+					"type": "XtCallbackList",
+					"default": "NULL",
+					"access": "C",
+					"description": ""
+				},
+				{
+					"name": "XmNwhichButton",
+					"class": "XmCWhichButton",
+					"type": "unsigned int",
+					"default": "dynamic",
+					"access": "CSG",
+					"description": ""
+				}
+			]
+		}		
+	]
+}				
+				
+				
+				
+				
+				
+		
+				
+
