@@ -35,3 +35,4 @@ http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/DevTools/15_SimpleAp
 https://help.perforce.com/visualization/views/6.3/views.html#page/UserManuals%2FappendixC_xwindow.19.13.html%23 <br/>
 https://ftp.cs.wisc.edu/math-prog/surgery/interface.c <br/>
 https://www.x.org/releases/current/doc/libX11/libX11/libX11.html <br/>
+https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifpg/toc.htm <br/>
