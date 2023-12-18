@@ -31,3 +31,6 @@ https://users.cs.cf.ac.uk/dave/X_lecture/ <br/>
 https://blog.pizzabox.computer/posts/booting-the-indy/ <br/>
 https://docs.oracle.com/cd/E19205-01/819-3700/index.html <br/>
 http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/DevTools/15_SimpleApp/SimpleApp.htmld/index.html <br/>
+https://help.perforce.com/visualization/views/6.3/views.html#page/UserManuals%2FappendixC_xwindow.19.13.html%23 <br/>
+https://ftp.cs.wisc.edu/math-prog/surgery/interface.c <br/>
+https://www.x.org/releases/current/doc/libX11/libX11/libX11.html <br/>
