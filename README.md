@@ -19,6 +19,7 @@ https://stackoverflow.com/questions/12014210/tkinter-app-adding-a-right-click-co
 https://python-course.eu/tkinter/text-widget-in-tkinter.php <br/>
 https://renzycode.online/ <br/>
 https://runestone.academy/ns/books/published/thinkcspy/GUIandEventDrivenProgramming/07_event_binding.html#event-binding <br/>
+https://stackoverflow.com/questions/12014210/tkinter-app-adding-a-right-click-context-menu <br/>
 
 #
 
