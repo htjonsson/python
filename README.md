@@ -26,7 +26,7 @@ https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/event-types.html <br/>
 https://stackoverflow.com/questions/12014210/tkinter-app-adding-a-right-click-context-menu <br/>
 https://python-course.eu/tkinter/labels-in-tkinter.php <br/>
 
-#
+# MOTIF
 
 https://man.archlinux.org/man/extra/openmotif/XmForm.3.en
 http://www.nextcomputers.org/NeXTfiles/Docs/NeXTStep/3.3/nd/UserInterface/08_File/File.htmld/index.html <br/>
@@ -50,3 +50,4 @@ https://stackoverflow.com/questions/30407836/x11-how-do-i-get-the-font-i-want <b
 https://gainos.org/~elf/sgi/nekonomicon/forum/8/16730318/1.html <br/>
 https://techpubs.jurassic.nl/manuals/0620/enduser/Utilities/sgi_html/ch02.html <br/>
 https://gitlab.freedesktop.org/xorg/app/xfontsel/-/blob/master/xfontsel.c?ref_type=heads <br/>
+http://tqd1.physik.uni-freiburg.de/library/SGI_bookshelves/SGI_Developer/books/Motif_PG/sgi_html/index.html <br/>
