@@ -25,3 +25,6 @@ https://www.tutorialspoint.com/tkinter-dropdown-menu-with-keyboard-shortcuts <br
 https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/event-types.html <br/>
 https://stackoverflow.com/questions/12014210/tkinter-app-adding-a-right-click-context-menu <br/>
 https://python-course.eu/tkinter/labels-in-tkinter.php <br/>
+https://tkdocs.com/tutorial/idle.html <br/> 
+https://www.pythonguis.com/tkinter-tutorial/ <br/> 
+https://ttkbootstrap.readthedocs.io/en/version-0.5/gallery/text_reader.html <br/> 
