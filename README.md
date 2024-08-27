@@ -2,7 +2,6 @@
 
 https://www.geeksforgeeks.org/radiobutton-in-tkinter-python/?ref=lbp <br/>
 https://www.pythonguis.com/faq/pack-place-and-grid-in-tkinter/ <br/>
-https://www.tutorialspoint.com/sqlite/sqlite_python.htm <br/>
 https://tkdocs.com/tutorial/styles.html <br/>
 https://www.pythontutorial.net/tkinter/tkinter-frame/ <br/>
 https://incrtcl.sourceforge.net/iwidgets/iwidgets/promptdialog.html <br/>
@@ -29,3 +28,7 @@ https://tkdocs.com/tutorial/idle.html <br/>
 https://www.pythonguis.com/tkinter-tutorial/ <br/> 
 https://ttkbootstrap.readthedocs.io/en/version-0.5/gallery/text_reader.html <br/> 
 https://www.tutorialspoint.com/building-microservices-with-python-and-flask <br/> 
+
+# SQLite
+https://www.sqlitetutorial.net/sqlite-python/ <br/>
+https://www.tutorialspoint.com/sqlite/sqlite_python.htm <br/>
